@@ -39,5 +39,5 @@ def get_weather(message):
         #отправка фото
         bot.send_photo(message.chat.id, file)
     else:
-        bot.reply_to(message, f'Город указан неверно')
+        bot.reply_to(message, f'Город указан неверно, повторите попытку')
 bot.polling(none_stop=True)
